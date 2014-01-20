@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Manuel Cabral (m.cabral@digisfera.pt)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tiny-lr": "0.0.5",
+    "connect": "~2.12.0"
+  }
 }
