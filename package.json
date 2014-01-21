@@ -1,6 +1,6 @@
 {
   "name": "livereload-static-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Static server with livereload powered by connect",
   "main": "index.js",
   "scripts": {
