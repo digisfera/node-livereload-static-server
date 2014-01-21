@@ -3,6 +3,7 @@ var path = require('path');
 var tinyLr = require('tiny-lr');
 
 module.exports = function(base, port, lrPort) {
+  base = base || '.';
   port = port || 8080;
   lrPort = lrPort || 35729;
   connect()
