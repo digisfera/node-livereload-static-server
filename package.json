@@ -13,5 +13,9 @@
     "connect": "~2.12.0",
     "connect-disable-304": "~0.0.0",
     "connect-livereload": "~0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/digisfera/node-livereload-static-server"
   }
 }
