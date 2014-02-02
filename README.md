@@ -12,4 +12,4 @@ Static server with livereload powered by connect
     var livereload = server()
 
     // Whenever a file changes
-    livereload(filename)
+    reloadedClients = livereload(filename)
