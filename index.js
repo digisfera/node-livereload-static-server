@@ -1,6 +1,7 @@
-var connect = require('connect');
-var path = require('path');
-var tinyLr = require('tiny-lr');
+var connect = require('connect'),
+    path = require('path'),
+    tinyLr = require('tiny-lr'),
+    _ = require('lodash');
 
 module.exports = function(base, port, lrPort) {
   base = base || '.';
@@ -18,5 +19,6 @@ module.exports = function(base, port, lrPort) {
 
   return function(file) {
     lrServer.changed({ body: { files: [file] }});
+    return _.size(lrServer.clients);
   };
 }
