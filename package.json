@@ -12,7 +12,8 @@
     "connect": "^2.17.1",
     "connect-disable-304": "^0.0.0",
     "connect-livereload": "^0.4.0",
-    "tiny-lr": "git://github.com/joliss/tiny-lr.git#quiet"
+    "tiny-lr": "git://github.com/joliss/tiny-lr.git#quiet",
+    "lodash": "^2.4.1"
   },
   "repository": {
     "type": "git",
