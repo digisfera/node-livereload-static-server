@@ -9,7 +9,7 @@ module.exports = function(base, port, lrPort) {
   lrPort = lrPort || 35729;
   connect()
     .use(require('connect-disable-304')())
-    .use(require('connect-livereload')())
+    .use(require('connect-livereload')({ port: lrPort }))
     .use(connect.static(path.resolve(base)))
     .use(connect.directory(path.resolve(base)))
     .listen(port);
@@ -21,4 +21,4 @@ module.exports = function(base, port, lrPort) {
     lrServer.changed({ body: { files: [file] }});
     return _.size(lrServer.clients);
   };
-}
+};
